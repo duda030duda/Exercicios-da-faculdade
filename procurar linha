@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+
+
+
+int main(){
+    char nome[15];
+    printf("Qual é o nome do arquivo? ");
+    fgets(nome, 15, stdin);
+    nome[strcspn(nome, "\n")]='\0';
+
+
+    FILE *entrada = (fopen(nome, "r"));
+        if (entrada==NULL)
+        {
+            printf("Erro ao abrir o arquivo\n");
+            return 1;
+        }
+        
+
+    printf("Qual é a linha que deseja procurar? ");
+    char procurar[80];
+    fgets(procurar, 80, stdin);
+    procurar[strcspn(procurar, "\n")]='\0';
+
+
+    char linha[10][80];
+        for(int i=0; i<10; i++){
+             fgets(linha[i], 80, entrada);
+        }
+
+    for (int i=0; i<10; i++){
+    
+        if(strstr(linha[i], procurar)!=NULL){
+            printf("A linha é: %d, e está escrito %s", i, linha[i]);
+        }
+        
+        }
+    
+
+    
+
+
+return 0;
+}
