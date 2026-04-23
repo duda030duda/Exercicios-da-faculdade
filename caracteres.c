@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*void contaVogais(FILE *arq){ //CONTA A QUANTIDADE DE CADA VOGAL NO ARQUIVO
-    int c;//Variável que guarda o valor de fgetc
-    int a=0, e=0, i=0, o=0, u=0; //Variáveis que guardam a quantidade de vogais
+    int c;
+    int a=0, e=0, i=0, o=0, u=0; 
     while((c=fgetc(arq))!=EOF){
         if(c=='a'|| c=='A') a+=1;
         if(c=='e'|| c=='E') e+=1;
@@ -15,7 +15,7 @@
 
 }*/
 
-void letraM(FILE *in, FILE *out){ //ESCREVE EM OUTRO ARQUIVO EM LETRA MAIUSCULA
+/*void letraM(FILE *in, FILE *out){ //ESCREVE EM OUTRO ARQUIVO EM LETRA MAIUSCULA
     int c;
     while((c=fgetc(in))!=EOF){
         if(c>='a' && c<='z'){
@@ -24,11 +24,24 @@ void letraM(FILE *in, FILE *out){ //ESCREVE EM OUTRO ARQUIVO EM LETRA MAIUSCULA
         fputc(c, out);
     }
 
+}*/
+
+void contrario(FILE *in, FILE *out){ //Terminar depois
+
+    int c;
+    char linha
+    while((c=fgetc(in))!=EOF){
+        if(c=='\n'){
+
+        }
+
+    }
+
 }
 
 int main(){
 
-    char nome[15]; //Variável para guardar o nome do arquivo dado pelo usuário
+    char nome[15]; 
     printf("Digite o nome do arquivo que deseja abrir:\n");
     scanf("%s",nome);
 
@@ -52,7 +65,7 @@ FILE *out;
 
 
 /*contaVogais(arq);*/
-letraM(arq, out);
+/*letraM(arq, out);*/
 
 
 
