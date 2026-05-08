@@ -1,1 +1,4 @@
-(null)
+casa bola casa carro mesa casa janela bola livro mesa casa
+gato cachorro gato peixe gato cavalo cachorro casa gato peixe gato
+sol lua estrela sol ceu nuvem sol estrela casa lua sol ceu
+arvore folha raiz arvore tronco folha arvore casa
