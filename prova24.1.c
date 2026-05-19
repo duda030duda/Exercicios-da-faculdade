@@ -39,7 +39,6 @@ int contabiliza_pontuacao(tPlacarJogo *placar, tPontos *time_grava){
     if(strcmp(placar->time1.nome,time_grava->nome)==0){
     time_grava->jogos+=1;
     time_grava->saldo+=placar->time1.gols;
-    if(placar->time1.gols>placar->time2.gols){
         time_grava->pontos+=3;
     }
     if(placar->time1.gols==placar->time2.gols){
